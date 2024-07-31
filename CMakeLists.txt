@@ -12,6 +12,8 @@ if (CMAKE_SYSTEM_NAME STREQUAL "Darwin")
 	include_directories(SYSTEM /usr/local/include)
 elseif (CMAKE_SYSTEM_NAME STREQUAL "Linux")
 	link_libraries(stdc++fs)
+elseif (CMAKE_SYSTEM_NAME STREQUAL "FreeBSD")
+	# Nothing special needed
 elseif (CMAKE_SYSTEM_NAME STREQUAL "Windows")
 	add_compile_definitions(NOMINMAX WIN32_LEAN_AND_MEAN)
 else()
